@@ -1,0 +1,16 @@
+
+/*? não to conseguindo linkar no id do svg*/
+#mapaGeral { fill:black; }
+
+#mapaGeral #mapa-ufs :hover {
+   fill: aquamarine !important; 
+}
+
+#mapaGeral path { fill: black; }
+
+#mapa-conteudo{ 
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.imagemMapa :hover { fill: black;}
