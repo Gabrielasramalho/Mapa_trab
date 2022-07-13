@@ -1,16 +1,30 @@
-
 /*? não to conseguindo linkar no id do svg*/
-#mapaGeral { fill:black; }
-
-#mapaGeral #mapa-ufs :hover {
-   fill: aquamarine !important; 
+#mapaGeral {
+    cursor: pointer;
 }
 
-#mapaGeral path { fill: black; }
-
-#mapa-conteudo{ 
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+#patriNat :hover {
+    fill: #0e592f;
 }
-.imagemMapa :hover { fill: black;}
+
+#patriCul :hover {
+    fill: #941a1a;
+}
+
+#misto> :hover {
+    fill: #941a1a;
+}
+
+#descricaoMapa {
+    background-color: #D9D9D994;
+    /*como deixar transparente a div q está embalando tudo?*/
+    display: flexbox;
+    text-align: end;
+    margin: 0%;
+    padding: 0%;
+}
+
+#textoDescricao {
+    margin-right: 2%;
+    padding: 5%;
+}
