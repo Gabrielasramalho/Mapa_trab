@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=League+Spartan:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    display: flexbox;
+    width: 100%;
+    height: 45rem;
+    background: url(img/background_1.svg);
+    padding: 0;
+    margin-top: 0%;
+    text-align: center;
+    /* pq, quando a tela está menor a imagem pede rolagem  e corta a img*/
+
+}
+
+.head>p {
+    font-stretch: 40%;
+    padding-top: 3rem;
+}
+
+.head>h1 {
+
+    font-family: Bebas Neue;
+    letter-spacing: 1.5px;
+    padding-top: 480px;
+    size: 200px;
+    color: #ffff;
+}
+
+.head>h2 {
+    padding-top: 0%;
+    font-weight: lighter;
+    color: #ffff;
+}
+
+#linkHead {
+    color: #ffff;
+}
+
+
+
+.head>p {
+    padding-top: 5px;
+    color: #ffff;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    text-align: center;
+
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+
+.imgTxt {
+    height: 300px;
+    right: 300px;
+    padding: 2px;
+    
+}
+
+h2 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+p {
+    font-family: Lato e Merriweather;
+    size: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1%;
+}
+
+.textoMateria {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.galeriaNat,
+.galeriaCul {
+    background-color: #D9D9D9;
+    padding-top: 10px;
+}
+
+.galeriaCul>img {
+    height: 300px;
+    right: 300px;
+    margin-right: 50%;
+    padding: 10px;
+}
+
+.galeriaNat>img {
+    height: 300px;
+    right: 300px;
+    margin-right: 50%;
+    padding: 10px;
+}
+
+h3>.destaqueCul {
+    background-color: #D92525;
+    color: #ffff;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+h3>.destaqueNat {
+    background-color: #2CA25F;
+    color: #ffff;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+.gif {
+    margin-left: 10px;
+}
+
+.destaqueImg {
+    background-color: #D92525;
+    color: #ffff;
+    padding: 2%;
+}
+
+ul {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+li > a {
+    color: black;
+}
+
+.txtEspecial {
+    margin-left: 20%;
+    margin-right: 15%;
+    border-left: solid #D92525;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.info{ margin-left: 3rem;
+margin-top: 1rem;
+margin-bottom: 1rem;}
+
+.infografico {
+    background-color: #DDDDDD1C;
+    width: 100%;
+    
+}
+.blocoImg2{
+    display: flexbox;
+    margin: 1rem;
+    margin-left: 15%;
+ }
+ imgGaleria{display: flexbox;
+    height: 300px;
+    right: 300px;
+
+}
+ gif{ display: flexbox;}
+
+ @media only screen and (max-width: 500px) {
+    .blocoImg2{
+        display: flexbox;
+                margin-left: 5%;
+     }
+     .txtEspecial { margin-left: 1rem;
+        margin-right: 0%;}
+    .destaqueImg{margin-left: 0;
+        margin-right: 0%;}
+   .info{ height: 50%;
+    right: 50%;}
+
+
+ }

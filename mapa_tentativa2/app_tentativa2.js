@@ -1,5 +1,5 @@
 
-//? Não entendi pq está declarando aqui no começo o mapaMalha e mapaDados sem linkar para o mapa em si e ao json (no ex da carol era uma url)? 
+
    let mapaMalha;//linha 295
    let mapaDados; // linha 298
 
@@ -284,14 +284,22 @@
         ]
 
 
-   async function loadMapData(){ 
-      let svgMapa = dadosGerais;
-      
+        // daria para usar a função fetch e then para criar a função//Async é uma função que precisa ser processada antes de realizar o comando 
+       async function loadMapData(){ 
+         //dúvida se declarei certo essa img?
+        let imagemMapa = document.querySelector('mapaGeral.svg');
+        
+        let mapaSvg = await fetch(imagemMapa);    
    }
-   
+//pegar o objeto resposta da função mapaSVG e transformar em txt  
 
-   
+mapaMalha = await mapaSvg.text();
+//no exemplo da Carol a gente converte uma api em um aquivo de texto e aparece a img visivel no site, no meu caso eu já tenho a img aparecendo, mas eu tbm preciso converter para texto pro html ler as informações internas, né? Além disso, fiquei com duvida sobre como declarar o svg no JS então coloquei uma classe na imagem e puxei pela classe?
+let mapaConteudo = document.querySelectorClassName(mapaImagem);
+mapaConteudo.innerHTML = mapaMalha;
   
+//primeiro gravar as informações dos patrimonios da humanidade
 
-
-
+let dadosJason = await fetch(dadosGerais);
+// a carol converteu os dados para json, mas eles já estão em json, essa linha não cabe para o meu código, né? 
+mapaDados = await dadosJason.json();
