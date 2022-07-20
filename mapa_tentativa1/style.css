@@ -232,6 +232,34 @@ imgGaleria {
 }
 .gifMedia{display: none;}
 
+#mapaGeral {
+    cursor: pointer;
+}
+
+#patriNat :hover {
+    fill: #0e592f;
+}
+
+#patriCul :hover {
+    fill: #941a1a;
+}
+
+#misto> :hover {
+    fill: #941a1a;
+}
+button.irPGaleria{ 
+    display: flexbox;
+    justify-content: center;
+    margin-left: 25%;
+    }
+
+#descMapa{ background-color: #D92525;
+align-items: center;
+max-width: 400px;
+min-height: 400px;
+}
+
+
 @media only screen and (max-width: 500px) {
     .blocoImg2 {
         display: flexbox;
