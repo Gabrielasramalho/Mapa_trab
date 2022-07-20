@@ -1,30 +1,270 @@
-/*? não to conseguindo linkar no id do svg*/
-#mapaGeral {
-    cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=League+Spartan:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+
 }
 
-#patriNat :hover {
-    fill: #0e592f;
-}
-
-#patriCul :hover {
-    fill: #941a1a;
-}
-
-#misto> :hover {
-    fill: #941a1a;
-}
-
-#descricaoMapa {
-    background-color: #D9D9D994;
-    /*como deixar transparente a div q está embalando tudo?*/
+body {
+    background-color: #ffff;
     display: flexbox;
-    text-align: end;
-    margin: 0%;
-    padding: 0%;
 }
 
-#textoDescricao {
-    margin-right: 2%;
-    padding: 5%;
+.head {
+    display: flexbox;
+    width: 100%;
+    height: 45rem;
+    background: url(img/background_1.svg);
+    padding: 0;
+    margin-top: 0%;
+    text-align: center;
+    /* pq, quando a tela está menor a imagem pede rolagem  e corta a img*/
+
+}
+
+.infoImg {
+    margin-left: 4rem;
+    display: flexbox;
+    }
+
+.destaqueInfo {
+    max-width: 600px;
+    margin-left: 4rem;
+    text-align: left;
+    margin-right: 40%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+}
+
+.destaqueInfo2 {
+    max-width: 600px;
+    margin-left: 4rem;
+    margin-right: 40%;
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pInfografico {
+    max-width: 500px;
+    margin-left: 4rem;
+    text-align: left;
+    margin-right: 40%;
+}
+.notaInfografico{ max-width: 500px;
+    margin-left: 4rem;
+    text-align: left;
+    margin-right: 40%;}
+
+
+.head>p {
+    font-stretch: 40%;
+    padding-top: 3rem;
+}
+
+.head>h1 {
+
+    font-family: Bebas Neue;
+    letter-spacing: 1.5px;
+    padding-top: 480px;
+    size: 200px;
+    color: #ffff;
+}
+
+.head>h2 {
+    padding-top: 0%;
+    font-weight: lighter;
+    color: #ffff;
+}
+
+#linkHead {
+    color: #ffff;
+}
+
+
+.head>p {
+    padding-top: 5px;
+    color: #ffff;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+h2 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+p {
+    font-family: Lato e Merriweather;
+    size: 16px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1%;
+}
+
+
+.imgTxt {
+    height: 300px;
+    right: 300px;
+    padding: 2px;
+
+}
+
+
+.textoMateria {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #ffff;
+}
+
+.galeriaNat,
+.galeriaCul {
+    background-color: #D9D9D9;
+    padding-top: 10px;
+}
+
+.galeriaCul>img {
+    height: 300px;
+    right: 300px;
+    margin-right: 50%;
+    padding: 10px;
+}
+
+.galeriaNat>img {
+    height: 300px;
+    right: 300px;
+    margin-right: 50%;
+    padding: 10px;
+}
+
+h3>.destaqueCul {
+    background-color: #D92525;
+    color: #ffff;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+h3>.destaqueNat {
+    background-color: #2CA25F;
+    color: #ffff;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+p>.destaqueNat{ background-color: #2CA25F;
+    color: #ffff;
+    font-weight: lighter;
+}
+
+p>.destaqueCul{ background-color: #2CA25F;
+    color: #ffff;
+    font-weight: lighter;
+}
+
+.gif {
+    margin-left: 10px;
+}
+
+.destaqueImg {
+    background-color: #D92525;
+    color: #ffff;
+    padding: 2%;
+}
+
+ul {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+li>a {
+    color: black;
+}
+
+.txtEspecial {
+    margin-left: 20%;
+    margin-right: 15%;
+    border-left: solid #D92525;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.infografico {
+    background-color: #D9D9D9;
+    width: 100%;    
+}
+
+.blocoImg2 {
+    display: flexbox;
+    margin: 1rem;
+    margin-left: 15%;
+}
+
+imgGaleria {
+    display: flexbox;
+    height: 300px;
+    right: 300px;
+
+}
+
+.gif {
+    display: flexbox;
+}
+.gifMedia{display: none;}
+
+@media only screen and (max-width: 500px) {
+    .blocoImg2 {
+        display: flexbox;
+        margin-left: 5%;
+    }
+
+    .txtEspecial {
+        margin-left: 1rem;
+        margin-right: 0%;
+    }
+
+    .destaqueImg {
+        margin-left: 0;
+        margin-right: 0%;
+    }
+
+   .infoImg { max-width: 400px;
+    max-height: 300px;}
+    /*?pq não pega esse gifMedia*/
+    .gifMedia{ display: flexbox;}
+    .gif { display: none;}
+    
+    
+    
+    .head>h1 {  
+        padding-top: 420px;
+        size: 30px;
+        color: #ffff;    
+    }
+    .head>p { max-width: 500px;   
+      padding: 1px;}
+    
+   
+
+
 }
