@@ -11,12 +11,17 @@ fetch('img/mapaGeral.svg')
           console.log(patrimonios)  
          for(patrimonio of patrimonios) {
             patrimonio.addEventListener( 
-               // "click", mostraExplicacao 
+                "click", alterarPopup
             )
          }
     });  
   
-   
+    //Criar função para alterar o estado do popup
+function alterarPopup() { 
+   //pega o elemento da classe popup1 e cria uma classe ativa
+   document.getElementById("popup-1").classList.toggle("ativa");
+    }
+
      
     //criar funcção
 //declarar os dados Json
