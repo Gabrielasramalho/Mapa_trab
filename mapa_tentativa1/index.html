@@ -46,13 +46,13 @@
               </p>              
           </section>
             <!--tem algo errado nesse container-->
-            <container class="infografico"> 
+            <div class="infografico"> 
 
              <h2> O Brasil tem 23 patrimônios da humanidade Na lista da unesco </h2>
 
-             <p class="notaInfografico"> O gráfico abaixo mostra a quantidade, categoria e como estão distribuídos os Patrimônios da Humanidade por região do Brasil.</p>
-
+             
              <h3 class="destaqueInfo"> Distribuição dos patrimônios mundiais por região do brasil</h3>
+             <p class="notaInfografico"> O gráfico abaixo mostra a quantidade, categoria e como estão distribuídos os Patrimônios da Humanidade por região do Brasil.</p>
               <!--? o title é o p cego ver? os gráficos são descritos? -->
              <figure>
                  <img class="infoImg"src="img/graficos/grafico-1.svg" alt="Distribuição dos patrimônios mundiais por região do brasil" title="Grafico de distribuição dos Patrimônios Mundiais por Região do Brasil">
@@ -79,19 +79,24 @@
                  <img class="infoImg" src="img/graficos/mg.svg" alt="Mapa de Minas Gerais com 4 quadrados vermelhos que representam 4 Patrimônios Culturais." title="Mapa de Minas Gerais com 4 quadrados vermelhos, representando os 4 Patrimônios Culturais.">
                  <figcaption>Ilustração: Patrimônios Culturais do Mundo, em Minas Gerais. FOTO:Gabriela Soares </figcaption>
              </figure>
-             <container>
-                 <div id="mapaInterativo"> 
-                  <div id="mapaConteudo"></div>
+            </div>
 
-                 <div id="descMapa"> 
-                    <h2 id="nomePatrimonio"> teste</h2>
-                    <h3 id="estadoPatrimonio"> teste</h3>
-                    <h3 id="tamanhoPatrimonio">teste</h3>
-                     <p id="descricaoPatrimonio"> teste</p>
-                     <!-- pra ir p galeria certa teria q criar dois botoões q mudem em js, ou dois botões cul/nat, ou colocar a galeria só no final ao invés de duas?-->
-                     <button id="botaoNat"> <a class="irPGaleria"> Ver na galeria de fotos </a> </button>                    
-                 </div>
-            </container>
+             <div class="mapaInterativo">
+                    <div id="mapaInterativo">
+                   <div id="mapaConteudo"></div>
+
+                     <div id="descMapa"> 
+                          <div class="botaoFechar">X</div>
+                          <h2 id="nomePatrimonio"> Nome patrimônio</h2>
+                          <h3 class="h3descMapa" id="estadoPatrimonio"> estado</h3>
+                         <h3 class="h3descMapa" id="tamanhoPatrimonio">
+                         tamanho
+                          </h3>
+                          <p id="descricaoPatrimonio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque necessitatibus, dolores, iure ipsa nulla iste quisquam iusto facilis earum fugit porro deleniti sit incidunt ducimus nisi officiis alias at?</p>
+                     
+                          <button> <a class="irPGaleria"> Ver na galeria de fotos </a> </button>
+                        </div>
+                </div>
                 
                <div class="textoMateria">
                    <p> 
@@ -149,7 +154,7 @@
               </div>
              
 
-              <div  class="galeriaCul"> <a href="irPGaleria">
+              <div  class="galeriaCul"> 
                <h3>
                  Confira na galeria os <b class="destaqueCul">Patrimônios Culturais</b> universais no Brasil
                </h3>
@@ -157,7 +162,7 @@
                 <p> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae ipsa quasi, est odio recusandae necessitatibus voluptatibus quos officia expedita, quae sed mollitia aperiam possimus reprehenderit beatae quas asperiores omnis!
                 </p>
-                 </a>
+                
                 </div>
 
                <div class="textoMateria">
