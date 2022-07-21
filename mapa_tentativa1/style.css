@@ -260,9 +260,11 @@ imgGaleria {
     margin-left: 25%;
     margin-right: 25%;              
     display: none;
-    border: solid black;}
+    border: solid black;
+    align-items: center;
+    max-width: 500px;}
 
-                 .popup .botaoFechar {
+        .popup .botaoFechar {
                  display: flexbox;
                  cursor: pointer;
                  right: 10px;
@@ -270,23 +272,23 @@ imgGaleria {
                  width: 18px;
                  height: 18px;
                  background: black;
-                 padding: 2%;
+                 padding: 1rem;
                  font-size: 25px;
                  font-weight:600;
                  line-height: 18px;
                  text-align: center;
                  border-radius: 50%;
-                 color: white;  }
+                 color: white; 
+                margin: 1rem; }
 
                                  
-   .popup.ativa .conteudoPopup { 
-     margin-left: 2%;
-     margin-right: 2%;
+   .popup.ativa .conteudoPopup {     
      display:  block;
      transition: all 300ms ease-in-out;
      transform:translater(-50%,-50%) scale(1); }
-     
-/*#descMapa > button { 
+
+.conteudoPopup > button { 
+    cursor: pointer;
     display: flexbox;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -297,7 +299,7 @@ imgGaleria {
     border-color: #BAE4BC;
     }
 
-
+ /*
     #descMapa > button:hover{  background-color: #5a755b;
         border-color: #5a755b;
     color: #ffff;  }
