@@ -97,7 +97,7 @@
                           </h3>
                           <p id="descricaoPatrimonio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque necessitatibus, dolores, iure ipsa nulla iste quisquam iusto facilis earum fugit porro deleniti sit incidunt ducimus nisi officiis alias at?</p>
                      
-                          <button> <a class="irPGaleria"> Ver na galeria de fotos </a> </button>
+                          <button> <a href="#galeria"> Ver na galeria de fotos </a> </button>
                         </div>
                         </div>
                 </div>
@@ -158,8 +158,6 @@
               </div>
              
 
-
-
                <div class="textoMateria">
                 <h2>
                     Patrimônios Naturais no Brasil                    
@@ -190,16 +188,34 @@
              </p>
                 </div> 
 
-              <div class="galeria"> 
-              <h3>
+              <div id="galeria"> 
+                       
+
+                     
+                   <h3>
                  Confira na galeria os <b class="destaqueNat"> Patrimônios da Humanidade no Brasil</b>           
                   </h3>
-              <img src="img/cul-13_Sítio Arqueológico Cais do Valongo.jpg">
-
-              <p> 
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae ipsa quasi, est odio recusandae necessitatibus voluptatibus quos officia expedita, quae sed mollitia aperiam possimus reprehenderit beatae quas asperiores omnis!
-              </p>
+                  <figure>
+                   <img src="img/cul-13_Sítio Arqueológico Cais do Valongo.jpg">
+                   <figcaption> xx</figcaption>
+                </figure>   
+                <div class="popup2" id="popup-2"> 
+                    <div class="conteudoPopup2">
+                     <div class="botaoFechar2" onclick="alterarPopup2()">&times;</div>
+                     <h3 > Critérios de Seleção UNESCO</h3>
+                     <p id="criterios"> </p>
               </div>
+                  </div>
+                <button onclick="alterarPopup2()"> ver critérios</button>           
+              </div>
+    <footer>
+        <h4> Por                        
+            <a href="https://www.linkedin.com/in/   gabriela-soares-ramalho-b36344147/" target="_blank"> 
+                Gabriela Soares</a>, sob orientação de Carol Rozendo, Rodrigo Menegat e Vinicius Sueiro.
+        </h4>
+
+       
+    </footer>
         
 <script src="app.js"></script>  
 </body>
