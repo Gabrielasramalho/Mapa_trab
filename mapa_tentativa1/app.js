@@ -223,7 +223,7 @@
   let code = dadosGerais[0].code;
   let criteriosUnesco = dadosGerais[0].criteriosUnesco;
 
-const listaPatrimonios = [];
+
 
 fetch("img/mapaGeral.svg")
   .then((response) => response.text())
@@ -235,38 +235,16 @@ fetch("img/mapaGeral.svg")
     );
 
     for (patrimonio of patrimonios) {
-      patrimonio.addEventListener("click", alterarPopup);
-      getPatrimonios();
+      patrimonio.addEventListener("click", alterarPopup ); 
+     
     }
   });
 
-
-  const getPatrimonios = () => { 
-    fetch('dados.json')
-    .then((response) => response.text())
-    .then((response) => { 
-        patrimonios.push(...JSON.parse(response));
-
-    });
-};
-
-const clicked = (pt) => { 
-    const code = state.getAtribute('code');
-    const uf = patrimonios.find(patrimonio => patrimonios.code === code);
-    if(!uf) return;
-    fillContent(uf);
+ 
+  function alterarTxt(){
+    document.getElementById("nomePatrimonio").innerHTML = "okokoko";
+  console.log(alterarTxt)
 }
-
-const fillContent = ({ nomePatrimonio, estado, descricao}) => { const nome = document.getElementById("tituloPatrimonio");
-const estadoP = document.getElementById('estadoPatrimonio');
-const desc = document.getElementById('descricaoPatrimonio');
-
-nome.innerText= '${nomePatrimonio}';
-estadoP.innerText = 'estado: ${estado}';
-desc.innerHTML= descricao;    
-
-}
-
  
 
 

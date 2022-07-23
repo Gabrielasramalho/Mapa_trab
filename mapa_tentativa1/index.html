@@ -43,90 +43,66 @@
 
              <p>
                  No Brasil, são 23 sítios de diversos tamanhos que recebem o título. <b> Eles estão divididos em patrimônio natural, cultural e misto da humanidade.</b> A região Sudeste do país é a que concentra o maior número de áreas consideradas de valor universal, com nove ao total, distribuídas em sete sítios de valor cultural, um natural e um misto.  
-              </p>              
-          </section>
-            <!--tem algo errado nesse container-->
-            <div class="infografico"> 
-
-             <h2> O Brasil tem 23 patrimônios da humanidade Na lista da unesco </h2>
-
-             
-             <h3 class="destaqueInfo"> Distribuição dos patrimônios mundiais por região do brasil</h3>
-             <p class="notaInfografico"> O gráfico abaixo mostra a quantidade, categoria e como estão distribuídos os Patrimônios da Humanidade por região do Brasil.</p>
+              </p>  
+              
+                           
+             <h3 > Veja a distribuição dos patrimônios mundiais por região do brasil</h3>
+             <p> O gráfico abaixo mostra a quantidade, categoria e como estão distribuídos os Patrimônios da Humanidade por região do Brasil.</p>
               <!--? o title é o p cego ver? os gráficos são descritos? -->
              <figure>
                  <img class="infoImg"src="img/graficos/grafico-1.svg" alt="Distribuição dos patrimônios mundiais por região do brasil" title="Grafico de distribuição dos Patrimônios Mundiais por Região do Brasil">
                  <figcaption> Grafico: distribuição dos Patrimônios Mundiais por região do Brasil. Foto: Gabriela Soares. </figcaption>
              </figure>
+                <h3> Em território,<b class="destaqueNat"> o maior Patrimônio registrado pela UNESCO no Brasil é o  complexo da Amazônia Central,</b> Patrimônio Natural, com mais de 5 milhões de hectares.</h3>
+                <figure class="infoImg">
+                    <img src="img/graficos/imagem-infografico-amazonia.svg" alt="Complexo da Amazônia Central" title=" Imagem do Complexo da Amazônia Central, com texto escrito: 5.232.018 hectares">
+                    <figcaption> Complexo da Amazônia Central. Foto:Getty Images/iStockphoto</figcaption>
+                    </figure>
+                <p> O sítio  é composto por quatro unidades de conservação: <b>Parque Nacional do Jaú, Parque Nacional de Anavilhanas, Parque Nacional do Amanã e Reserva de Desenvolvimento Sustentável Mamirauá.</b></p>
+                <p> A primeira foi inscrita na lista de Patrimônios Naturais da Humanidade em 2000, enquanto as outras três foram reconhecidas em 2003.</p>
 
-             <h3 class="destaqueInfo"> Em território, <b class="destaqueNat"> o maior Patrimônio registrado pela UNESCO no Brasil é o  complexo da Amazônia Central,</b> Patrimônio Natural, com mais de 5 milhões de hectares.</h3>
-
-             <figure>
-             <img class="infoImg"src="img/graficos/imagem-infografico-amazonia.svg" alt="Complexo da Amazônia Central" title=" Imagem do Complexo da Amazônia Central, com texto escrito: 5.232.018 hectares">
-             <figcaption> Complexo da Amazônia Central. Foto:Getty Images/iStockphoto</figcaption>
-             </figure>
-
-             <p class="pInfografico"> O sítio  é composto por quatro unidades de conservação: <b>Parque Nacional do Jaú, Parque Nacional de Anavilhanas, Parque Nacional do Amanã e Reserva de Desenvolvimento Sustentável Mamirauá.</b></p>
+                
              
-             <p class="pInfografico"> A primeira foi inscrita na lista de Patrimônios Naturais da Humanidade em 2000, enquanto as outras três foram reconhecidas em 2003.</p>
-                           
-            
-             <h3 class="destaqueInfo2"> 
-                 O Estado de Minas Gerais concentra o maior número de patrimônios da humanidade dentro do território brasileiro, com <B class="destaqueCul"> 4 Patrimônios culturais</B> reconhecidos pela UNESCO.
-             </h3>
+          </section>
+                                  
 
-             <figure>
-                 <img class="infoImg" src="img/graficos/mg.svg" alt="Mapa de Minas Gerais com 4 quadrados vermelhos que representam 4 Patrimônios Culturais." title="Mapa de Minas Gerais com 4 quadrados vermelhos, representando os 4 Patrimônios Culturais.">
-                 <figcaption>Ilustração: Patrimônios Culturais do Mundo, em Minas Gerais. FOTO:Gabriela Soares </figcaption>
-             </figure>
-            </div>
+             <div class="mapaInterativo">    
+                      
+                       <div id="mapaConteudo"></div>
 
-             <div class="mapaInterativo">
-                    <div id="mapaInterativo">
-                   <div id="mapaConteudo"></div>
-
-
-
-                     <div class="popup" id="popup-1">                           
+                        
+                        <div class="popup" id="popup-1">                        
                           <div class="conteudoPopup"> 
-                            <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
-                          <h2 id="nomePatrimonio"> Nome patrimônio</h2>
-                          <h3 class="h3descMapa" id="estadoPatrimonio"> estado</h3>
-                         <h3 class="h3descMapa" id="tamanhoPatrimonio">
-                         tamanho
-                          </h3>
-                          <p id="descricaoPatrimonio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque necessitatibus, dolores, iure ipsa nulla iste quisquam iusto facilis earum fugit porro deleniti sit incidunt ducimus nisi officiis alias at?</p>
+                             <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
+                              <h2 id="nomePatrimonio"> </h2>
+                              <h3 class="h3descMapa" id="estadoPatrimonio"> estado</h3>
+                              <h3 class="h3descMapa" id="tamanhoPatrimonio">
+                               tamanho
+                               </h3>
+                               <p id="descricaoPatrimonio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque necessitatibus, dolores, iure ipsa nulla iste quisquam iusto facilis earum fugit porro deleniti sit incidunt ducimus nisi officiis alias at?</p>
+             
+                                <button> <a href="#galeria"> Ver na galeria de fotos </a> </button>
+                  </div>
+                  </div>
+                  </div>
+                
+                  
                      
-                          <button> <a href="#galeria"> Ver na galeria de fotos </a> </button>
-                        </div>
-                        </div>
-                </div>
+               
                 
                <div class="textoMateria">
+                <h3 > 
+                    O Estado de Minas Gerais concentra o maior número de patrimônios da humanidade dentro do território brasileiro, com <B class="destaqueCul"> 4 Patrimônios culturais</B> reconhecidos pela UNESCO.
+                </h3>
+   
+                <figure >
+                    <img  src="img/graficos/mg.svg" alt="Mapa de Minas Gerais com 4 quadrados vermelhos que representam 4 Patrimônios Culturais." title="Mapa de Minas Gerais com 4 quadrados vermelhos, representando os 4 Patrimônios Culturais.">
+                    <figcaption>Ilustração: Patrimônios Culturais do Mundo, em Minas Gerais. FOTO:Gabriela Soares </figcaption>
+                </figure>
                    <p> 
                  <b> Em número de sítios, 65% dos territórios reconhecidos pela UNESCO como Patrimônio da Humanidade no Brasil são classificados como de inestimável valor cultural.                    
                  </b>
                    </p>
-
-                   <p> O Estado com a maior concentração de Patrimônios Culturais é Minas Gerais, com: </p>
-
-                    <ul>
-                 <li>
-                     <a href="https://whc.unesco.org/en/list/890" target="_blank"> Centro Histórico do Município de Diamantina </a> 
-                 </li>
-
-                 <li> 
-                     <a href="https://whc.unesco.org/en/list/1493" target="_blank">Conjunto Moderno da Pampulha </a>
-                 </li>
-
-                 <li>
-                     <a href="https://whc.unesco.org/en/list/124" target="_blank">Cidade Histórica de Ouro Preto </a>
-                 </li>
-
-                 <li>
-                     <a href="https://whc.unesco.org/en/list/334" target="_blank">Santuário do Bom Jesus do Congonhas </a> 
-                 </li>            
-                 </ul>
 
                   <p>Infelizmente, as chuvas que atingiram Minas Gerais em janeiro deste ano causaram danos significativos a alguns desses locais, principalmente Ouro Preto — primeira cidade brasileira inscrita na Lista do Patrimônio Mundial da UNESCO —, e Congonhas.
                   </p>
@@ -138,31 +114,29 @@
 
                        afirmou em nota a Diretora e Representante da UNESCO no Brasil, Marlova Noleto.
                   </p>
-             
-                  <figure>                    
+               </div>
+                 
+                  <div class="imagensCul">
+                  <figure class="casaro">                     
                       <img src="img/casarao.svg" alt="Solar Baeta Neves" title="Fachada e imagens internas do casarão antes do soterramento.">
                       <figcaption> Solar Baeta Neves. Foto:Google Street View/Forum</figcaption> 
                   </figure>
-
-                 <p class="destaqueImg">
+                  <p class="destaqueImg">
                     Solar Baeta Neves, primeira construção de estilo neocolonial de Ouro Preto. O casarão do século XIX foi completamente destruída por um deslizamento de terra  do Morro da Forca no centro histórico de Ouro Preto, em 13 de janeiro de 2022. 
                  </p>  
+                                 
+                  <img class="gif" src="img/Momento em que casarão de Ouro Preto desaba após deslizamento de terra.gif">  
+                </div>
+               
 
-                 <figure>
-                       <img class="gifMedia" src="img/graficos/gif_media.gif"alt="Momento em que Solar Baeta Neves é atingida por deslizamento de terra" title="Momento em que Solar Baeta Neves é atingida por deslizamento de terra">
-                      <figcaption> Momento em que Solar Baeta Neves é atingida por deslizamento de terra. Imagens retidas do site Metrópoles.
-                      </figcaption>
-                  </figure>
-
-                  <img class="gif" src="img/Momento em que casarão de Ouro Preto desaba após deslizamento de terra.gif">        
-              </div>
-             
-
-               <div class="textoMateria">
-                <h2>
+                 <div class="textoMateria">
+                 
+                   
+                  
+                  <h2>
                     Patrimônios Naturais no Brasil                    
                 </h2>
-             <p>
+              <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem, harum distinctio dolores impedit qui totam quia inventore! Eos temporibus modi corrupti explicabo obcaecati officia numquam magni quisquam impedit nostrum.
              </p>
 
@@ -186,12 +160,12 @@
              <p>
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere expedita vitae? Nostrum quia aspernatur ullam sint molestiae rem fuga laudantium voluptatibus, fugit suscipit. Amet, sint. Repellendus molestiae nam quaerat.
              </p>
-                </div> 
+                 </div>
+             
+               
 
-              <div id="galeria"> 
-                       
+                 <div id="galeria">                   
 
-                     
                    <h3>
                  Confira na galeria os <b class="destaqueNat"> Patrimônios da Humanidade no Brasil</b>           
                   </h3>
@@ -207,7 +181,8 @@
               </div>
                   </div>
                 <button onclick="alterarPopup2()"> ver critérios</button>           
-              </div>
+                 </div>
+             
     <footer>
         <h4> Por                        
             <a href="https://www.linkedin.com/in/   gabriela-soares-ramalho-b36344147/" target="_blank"> 
