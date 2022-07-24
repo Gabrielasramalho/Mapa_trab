@@ -40,6 +40,18 @@ body {
     color: #ffff;
 }
 
+a { color: #696969; 
+text-align: start;
+ }
+  
+ figure.paraty{margin-left: 0;
+    padding-left: 0; 
+    border: 0;
+}
+
+  img.paraty{ width: 300px;
+margin-left: 0;
+padding-left: 0;}
 
 .head>p {
     margin: 0;
@@ -188,6 +200,10 @@ figcaption {
 
 @media screen and (max-width: 1000px) {
 
+    #gif{ margin: 0;
+    padding: 0;
+     max-width: 300px;}
+ 
     .textoMateria>.mg {
        
         margin-left: 0;
@@ -200,7 +216,7 @@ figcaption {
         margin-left: 0%;
        
     }   
-   
+     
     
     .head{ 
         margin-top: 0%;
@@ -214,7 +230,22 @@ figcaption {
     margin-left: 0;
 padding-left: 0; }
 
+.containerMapa { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
+
+h3.mapa{ flex-direction: column;
+    justify-content: center;
+    margin: 0;}
+}
+.containerMapa>img {flex-direction: column;
+    min-width: 20px;
+    justify-content: center;
+    margin: 0;}
 
 
 .containerMapa {
@@ -272,7 +303,7 @@ li>h3 {
 
 li {
     cursor: pointer;
-    text-align: center;
+   
 }
 
 li.nat :hover {
