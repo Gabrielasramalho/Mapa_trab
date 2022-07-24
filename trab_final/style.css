@@ -198,6 +198,8 @@ figcaption {
     padding-top: 0.3rem;
 }
 
+
+
 @media screen and (max-width: 1000px) {
 
     #gif{ margin: 0;
@@ -209,7 +211,7 @@ figcaption {
         margin-left: 0;
         padding: 0;
     }
-
+ 
     #mg {
         max-width: 250px;
         align-content: flex-start;
@@ -251,6 +253,7 @@ h3.mapa{ flex-direction: column;
 .containerMapa {
     display: flex;
     flex-direction: row;
+    
         background-color: #e9e9e9;
         margin: 0;
     width: 100%;
@@ -301,6 +304,9 @@ li>h3 {
 
 }
 
+img.imgMapa { width: 300px; }
+figure.imgMapa { margin: 0; padding: 1rem;}
+
 li {
     cursor: pointer;
    
@@ -308,6 +314,14 @@ li {
 
 li.nat :hover {
     background-color: #2CA25F;
+    width: auto;
+    text-align: left;
+    color: white;
+
+}
+
+li.misto :hover { 
+    background-color: #f19112;
     width: auto;
     text-align: left;
     color: white;
