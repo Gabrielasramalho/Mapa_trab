@@ -95,15 +95,18 @@ p {
 .mapaInterativo{ 
    display: flex; 
    flex-direction: row;
-    width: 100%;
+   flex-wrap: wrap;
+   
+    margin-left: 0;
     height: 700px;
     background-color: #f2f2f27a;
-        padding-top:1rem;
-    padding-bottom: 1rem;}
+     padding-top:1rem;
+    padding-bottom: 1rem;
+padding-left: 5%;}
  
-#mapaInterativo{ padding-left: 1rem;
-}
+
 .imgTxt {
+    display: block;
     height: 300px;
     right: 300px;
     padding: 1rem;
@@ -112,6 +115,8 @@ p {
 
 
 .textoMateria {
+    
+    padding-top: 1rem;
     margin-top: 2rem;
     padding-bottom: 2rem;
     background-color: #ffff;
@@ -186,11 +191,14 @@ p>.destaqueCul {
 
 
 .destaqueImg {
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 500px;
     background-color: #D92525;
     color: #ffff;
     padding: 1rem;
-}
+    margin-left: 50%;
+    }
+
 
 ul {
     margin-left: 25%;
@@ -202,9 +210,9 @@ li>a {
 }
 
 .txtEspecial {
-   
+    
     margin-right: 15%;
-    border-left: solid #D92525;
+    border-left: solid red;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -212,21 +220,18 @@ li>a {
 
 .imagensCul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     flex: 2;
-       
+   padding-left: 5%;     
     }
     .gif{ width: 500px;
     right: 500px;}
 
 
 
-/*figure.casarao{
-    display: inline-flex;
-    margin-left: 1rem;
- }
- .gif { margin-left: 1rem;
-    display: inline-flex;}*/
+
 
 
 .blocoImg2 {
@@ -298,21 +303,21 @@ li>a {
     display: block;
     transition: all 300ms ease-in-out;
     transform: translater(-50%, -50%) scale(1);
-    
-    margin-top: 0%;
+    width: 90%;
+    padding-top: 2rem;
+    padding-right: 5%;
 }
 
 
 .conteudoPopup>button {
     cursor: pointer;
     display: flexbox;
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 70%;
     background-color: #BAE4BC;
     padding: 0.3rem;
     border-color: #BAE4BC;
+    align-content: center;
 }
 
 .conteudoPopup2 {
@@ -429,7 +434,7 @@ h4>a {
     color: rgb(46, 44, 48);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .blocoImg2 {
         display: flexbox;
         margin-left: 5%;
@@ -440,6 +445,7 @@ h4>a {
     .txtEspecial {
         margin-left: 1rem;
         margin-right: 0%;
+        
     }
 
     .destaqueImg {
@@ -452,8 +458,17 @@ h4>a {
         margin-right: 0%;
     }
 
+    .destaqueImg {
+        
+        max-width: 300px;
+        background-color: #D92525;
+        color: #ffff;
+        padding: 1rem;
+        margin-left: 5%;
+        }
+
     .infoImg {
-       
+       margin: 1rem;
         max-width: 300px;
         max-height: 200px;
         padding-top: 1 rem;
@@ -483,7 +498,12 @@ h4>a {
         padding: 1px;
     }
 
-
+    .popup.ativa .conteudoPopup {
+        display: flexblock;
+        flex-wrap: wrap;
+        
+        
+    }
 
 
 }

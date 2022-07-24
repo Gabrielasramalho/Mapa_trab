@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa ñ interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="head">
+            
+    <h1> 
+        HISTÓRIA, CULTURA E PRESERVAÇÃO
+     </h1 class="tituloTumb">
+
+     <h2>23 Patrimônios da Humanidade para conhecer no Brasil</h2>
+
+     <p> Por                        
+         <a id="linkHead" href="https://www.linkedin.com/in/   gabriela-soares-ramalho-b36344147/" target="_blank"> 
+             Gabriela Soares,
+         </a>  
+         sob orientação de Carol Rozendo, Rodrigo Menegat e Vinicius Sueiro
+     </p>
+
+     <p class="txtNota"> 
+      Projeto para o 
+
+      <a id="linkHead"href="https://www.portaldosjornalistas.com.br/insper-lanca-pos-graduacao-em-jornalismo-de-dados-automacao-e-data-storytelling/" target="_blank"> Master em Jornalismo de Dados do Insper.
+      </a>
+     </p>
+
+ </div>
+
+ <section class="textoMateria"> 
+    <p> 
+        Ao total existem 11.154 mil regiões no planeta consideradas Patrimônio da Humanidade ou Patrimônio Mundial pela Organização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO). Os locais recebem o título por serem de valor excepcional e universal para a cultura da humanidade.
+    </p>
+
+    <p>
+         A lista, que está em constante crescimento, reúne nomes desde 1972, quando foi adotada  pelos países membros da UNESCO. O objetivo é preservar bens culturais e naturais de excepcional valor para humanidade, e que, portanto, sejam considerados “patrimônios de todos os povos”, como explica a instituição. A seleção reúne territórios, como a Cidade de Quito no Equador, o Centro Histórico de Puebla no México e o Cairo histórico, no Egito, entre outros. 
+    </p>
+
+    <p>
+        No Brasil, são 23 sítios de diversos tamanhos que recebem o título. <b> Eles estão divididos em patrimônio natural, cultural e misto da humanidade.</b> A região Sudeste do país é a que concentra o maior número de áreas consideradas de valor universal, com nove ao total, distribuídas em sete sítios de valor cultural, um natural e um misto.  
+     </p>                    
+    
+    <p> O gráfico abaixo mostra a quantidade, categoria e como estão distribuídos os Patrimônios da Humanidade por região do Brasil:</p>
+     <!--? o title é o p cego ver? os gráficos são descritos? -->
+    <figure class="infoImg"  class="grafico">
+        <img src="img/graficos/grafico-1.svg" alt="Distribuição dos patrimônios mundiais por região do brasil" title="Grafico de distribuição dos Patrimônios Mundiais por Região do Brasil">
+        <figcaption> Grafico: distribuição dos Patrimônios Mundiais por região do Brasil. Foto: Gabriela Soares. </figcaption>
+    </figure>
+       <h3> Em território,<b class="destaqueNat"> o maior Patrimônio registrado pela UNESCO no Brasil é o  complexo da Amazônia Central,</b> Patrimônio Natural, com mais de 5 milhões de hectares.</h3>
+       <figure class="infoImg">
+           <img id="mg"src="img/graficos/imagem-infografico-amazonia.svg" alt="Complexo da Amazônia Central" title=" Imagem do Complexo da Amazônia Central, com texto escrito: 5.232.018 hectares">
+           <figcaption> Complexo da Amazônia Central. Foto:Getty Images/iStockphoto</figcaption>
+           </figure>
+       <p> O sítio  é composto por quatro unidades de conservação: <b>Parque Nacional do Jaú, Parque Nacional de Anavilhanas, Parque Nacional do Amanã e Reserva de Desenvolvimento Sustentável Mamirauá.</b></p>
+       <p> A primeira foi inscrita na lista de Patrimônios Naturais da Humanidade em 2000, enquanto as outras três foram reconhecidas em 2003.</p>      
+    
+ </section>
+
+   
+    <div class="containerMapa">         
+         
+        <img src="mapaGeralNInterativo.svg">  
+                 
+         <ol>  <h2>Lista de Patrimônios da UNESCO no Brasil</h2>
+              <h3> 
+                Clique nos Patrimônios listados abaixo para ver mais informações sobre os locais.
+                </h3>
+            <li class="nat">
+                <h2 onclick="alterarPopup1()"> Complexo de Conservação da Amazônia Central  </h2> 
+            </li>
+                <div class="popup" class="popup1" id="popup1"> 
+                    <div class="conteudoPopup1">
+                      <h3 class="mapa">5.232.018 ha | Amazonas </h3>
+                       <p>O Complexo de Conservação da Amazônia Central compõe a maior área protegida da Bacia Amazônica e é uma das regiões mais ricas em biodiversidade do planeta. Também inclui uma importante amostra de ecossistemas de várzea, florestas de igapó, lagos e canais que formam um mosaico aquático em constante evolução que abriga a maior variedade de peixes elétricos do mundo. O local protege as principais espécies ameaçadas, incluindo o pirarucu gigante, o peixe-boi da Amazônia, o jacaré-preto e duas espécies de botos. </p>
+                     <p> Fonte:UNESCO </p>
+                 </div>                </div>          
+
+            <li class="nat">
+                <h2 onclick="alterarPopup2()"> Área de Conservação do Pantanal </h2> 
+            </li>
+                <div class="popup" class="popup2"  id="popup2"> 
+                    <div class="conteudoPopup2"> 
+                     <h3 class="mapa">187.818 ha | Mato Grosso e Mato Grosso do Sul </h3>
+                    <p>A Área de Conservação do Pantanal é composta por um aglomerado de quatro áreas protegidas com área total de 187.818 ha. Localizado no centro-oeste do Brasil, no canto sudoeste do Estado de Mato Grosso, o local representa 1,3% da região do Pantanal do Brasil, um dos maiores ecossistemas de terras úmidas de água doce do mundo. Aqui se localizam as cabeceiras dos dois principais sistemas fluviais da região, os rios Cuiabá e Paraguai, e a abundância e diversidade de sua vegetação e vida animal são espetaculares. </p>
+                   <p> Fonte:UNESCO </p>
+                </div>     </div>
+            
+
+            <li class="nat"> 
+                <h2  onclick="alterarPopup3()">Áreas Protegidas do Cerrado: Parques Nacionais da Chapada dos Veadeiros e das Emas </h2> 
+            </li> 
+                <div class="popup" class="popup3" id="popup3">  
+                    <div class="conteudoPopup3">               
+                    <h3>381.430 ha | Goiás</h3>
+                    <p>Os dois locais incluídos na designação contêm flora e fauna e habitats-chave que caracterizam o Cerrado – um dos ecossistemas tropicais mais antigos e diversificados do mundo. Por milênios, esses locais serviram de refúgio para diversas espécies durante períodos de mudanças climáticas e serão vitais para a manutenção da biodiversidade da região do Cerrado durante futuras flutuações climáticas. </p>
+                   <p> Fonte:UNESCO </p>
+                </div>
+                 </div>  
+           
+
+            <li class="cul">
+                <h2 onclick="alterarPopup4()">Centro Histórico da Cidade de Goiás</h2> 
+            </li>
+                <div class="popup"  class="popup4" id="popup4"> 
+                    <div class="conteudoPopup4" >                  
+                    <h3 class="mapa"> 40,3 ha | Goiás</h3>
+                    <p>Goiás testemunha a ocupação e colonização das terras do Brasil central nos séculos XVIII e XIX. O traçado urbano é um exemplo do desenvolvimento orgânico de uma cidade mineira, adaptado às condições do local. Embora modesta, tanto a arquitetura pública quanto a privada formam um todo harmonioso, graças ao uso coerente de materiais locais e técnicas vernáculas. </p>
+                   <p> Fonte:UNESCO </p>
+                </div>
+                </div>
+            
+
+            <li class="cul" >
+                <h2 onclick="alterarPopup5()">Brasília</h2> 
+            </li>
+                <div class="popup" class="popup5" id="popup5"> 
+                    <div class="conteudoPopup5" > 
+                    <h3>11.268,92 ha| Distrito Federal</h3>
+                    <p>Brasília, capital criada ex nihilo no centro do país em 1956, foi um marco na história do urbanismo. O urbanista Lucio Costa e o arquiteto Oscar Niemeyer pretendiam que todos os elementos – desde o layout dos bairros residenciais e administrativos (muitas vezes comparados à forma de um pássaro em voo) até a simetria dos próprios prédios – estivessem em harmonia com o conjunto da cidade. Projeto. Os edifícios oficiais, em particular, são inovadores e imaginativos.</p>
+                   <p> Fonte:UNESCO </p>
+                </div>
+                </div>
+           
+
+            <li class="cul"> 
+                <h2 onclick="alterarPopup6()">Centro Histórico de São Luís</h2>                 
+             </li>
+                <div class="popup" class="popup6" id="popup6"> 
+                    <div class="conteudoPopup6" > 
+                    
+                    <h3 class="mapa" >66,65 ha | Maranhão </h3>                    
+                    <p>O núcleo do final do século XVII desta cidade histórica, fundada pelos franceses e ocupada pelos holandeses antes de cair sob domínio português, preservou na íntegra a planta original retangular da rua. Graças a um período de estagnação econômica no início do século XX, um número excepcional de belos edifícios históricos sobreviveu, tornando-se um excelente exemplo de uma cidade colonial ibérica.</p>
+                   <p> Fonte:UNESCO </p>
+                   </div>  </div>
+           
+
+            <li class="cul" >
+                <h2 onclick="alterarPopup7()" >Parque Nacional da Serra da Capivara</h2> 
+              </li>
+                <div class="popup" class="popup7" id="popup7"> 
+                    <div class="conteudoPopup7" >
+                    <h3 class="mapa">66,65 ha | Piauí </h3>
+                    <p>Muitos dos inúmeros abrigos rochosos do Parque Nacional da Serra da Capivara são decorados com pinturas rupestres, algumas com mais de 25.000 anos. Eles são um testemunho notável de uma das comunidades humanas mais antigas da América do Sul.</p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+           
+
+            <li class="nat">
+                <h2  onclick="alterarPopup8()">Ilhas Atlânticas Brasileiras: Reservas Fernando de Noronha e Atol das Rocas</h2> 
+            </li>
+                <div class="popup" class="popup8" id="popup8"> 
+                    <div class="conteudoPopup8" >
+                    <h3 class="mapa">43.270 ha | Pernambuco </h3>
+                    <p>Os picos da cordilheira submarina do Atlântico Sul formam o Arquipélago de Fernando de Noronha e o Atol das Rocas, na costa do Brasil. Eles representam uma grande proporção da superfície insular do Atlântico Sul e suas águas ricas são extremamente importantes para a reprodução e alimentação de atuns, tubarões, tartarugas e mamíferos marinhos. As ilhas abrigam a maior concentração de aves marinhas tropicais do Atlântico Ocidental. A Baía de Golfinhos tem uma população excepcional de golfinhos residentes e na maré baixa o Atol das Rocas oferece uma espectacular paisagem marítima de lagoas e piscinas naturais repletas de peixes.</p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+           
+
+            <li class="cul">
+                <h2  onclick="alterarPopup9()">Centro Histórico da Vila de Olinda</h2> 
+            </li>
+                <div class="popup"  class="popup9" id="popup9"> 
+                    <div class="conteudoPopup9" >
+                    <h3 class="mapa">190,9 ha ha | Pernambuco </h3>
+                    <p> Fundada pelos portugueses no século XVI, a cidade  tem uma história ligada à produção de açúcar. Reconstruída após ser saqueada por holandeses, seu tecido urbano central data do século XVIII. O equilíbrio harmonioso entre construções, jardins, 20 igrejas barrocas, conventos e numerosos pequenos passos (capelas) contribui para o charme particular de Olinda.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+          
+
+            <li class="cul" > 
+                <h2 onclick="alterarPopup10()">Praça São Francisco na Vila de São Cristóvão</h2> 
+            </li>
+                <div  class="popup" class="popup10" id="popup10"> 
+                     <div class="conteudoPopup10">    
+                    <h3 class="mapa">3 ha | Sergipe </h3>
+                    <p> A Praça de São Francisco, na vila de São Cristovão, é um espaço aberto quadrilátero rodeado por importantes edifícios primitivos como a Igreja e o Convento de São Francisco, a Igreja e Santa Casa da Misericórdia, o Paço Provincial e as casas associadas de diferentes períodos históricos que circundam a Quadrado. Este conjunto monumental, juntamente com o casario dos séculos XVIII e XIX envolvente, cria uma paisagem urbana que reflecte a história da vila desde a sua origem. O complexo franciscano é um exemplo da arquitetura típica da ordem religiosa desenvolvida no nordeste do Brasil.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div>
+           
+
+            <li class="nat">
+                <h2 onclick="alterarPopup11()">Reservas de Mata Atlântica da Costa do Descobrimento</h2>
+              </li>
+                <div class="popup"  class="popup11" id="popup11"> 
+                    <div class="conteudoPopup11">
+                    <h3>111.930 ha | Bahia </h3>
+                    <p> As Reservas de Mata Atlântica da Costa do Descobrimento, nos estados da Bahia e Espírito Santo, consistem em oito áreas protegidas separadas contendo 112.000 ha de Mata Atlântica e arbustos associados ( restingas ). As florestas tropicais da costa atlântica do Brasil são as mais ricas do mundo em termos de biodiversidade. O sítio contém uma gama distinta de espécies com alto nível de endemismo e revela um padrão de evolução que não é apenas de grande interesse científico, mas também de importância para a conservação.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+           
+
+            <li class="cul" > <h2 onclick="alterarPopup12()">Centro Histórico de Salvador da Bahia</h2> 
+            </li>
+                <div class="popup"  class="popup12" id="popup12">    
+                    <div class="conteudoPopup12">               
+                    <h3 class="mapa">200 ha | Bahia </h3>
+                    <p>Primeira capital do Brasil, de 1549 a 1763, Salvador da Bahia testemunhou a mistura das culturas europeia, africana e ameríndia. Foi também, a partir de 1558, o primeiro mercado de escravos do Novo Mundo, com escravos chegando para trabalhar nas plantações de açúcar. A cidade conseguiu preservar muitos edifícios renascentistas notáveis. Uma característica especial da cidade velha são as casas coloridas, muitas vezes decoradas com finos trabalhos de estuque.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+            
+
+            <li class="cul">
+                <h2  onclick= "alterarPopup13()">Conjunto Moderno da Pampulha</h2> 
+            </li>
+                <div  class="popup" class="popup13" id="popup13">                
+                    <div class="conteudoPopup13">
+                    <h3 class="mapa">154 ha | Minas Gerais  </h3>
+                    <p>O Conjunto Moderno da Pampulha foi o centro de um projeto visionário de cidade-jardim criado em 1940 em Belo Horizonte, capital de Minas Gerais. Concebido em torno de um lago artificial, este centro cultural e de lazer incluía um casino, um salão de festas, o Golf Yacht Club e a Igreja de São Francisco de Assis. Os prédios foram projetados pelo arquiteto Oscar Niemeyer, em colaboração com artistas inovadores. O Ensemble compreende formas arrojadas que exploram o potencial plástico do concreto, ao mesmo tempo em que fundem arquitetura, paisagismo, escultura e pintura em um todo harmonioso. Reflete a influência das tradições locais, do clima brasileiro e do entorno natural nos princípios da arquitetura moderna.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+           
+
+            <li class="cul" >
+                <h2 onclick="alterarPopup14()">14.Santuário do Bom Jesus do Congonhas </h2> 
+            </li>
+                <div class="popup"  class="popup14" id="popup14"> 
+                    <div class="conteudoPopup14">
+                    <h3>2,19 ha | Minas Gerais  </h3>
+                    <p>Este santuário em Minas Gerais, ao sul de Belo Horizonte, foi construído na segunda metade do século XVIII. É constituída por uma igreja com um magnífico interior rococó de inspiração italiana; uma escada externa decorada com estátuas dos profetas; e sete capelas que ilustram a Via Sacra, nas quais as esculturas policromadas de Aleijadinho são obras-primas de uma arte barroca altamente original, comovente e expressiva.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+            
+            
+            <li class="cul">
+                <h2  onclick="alterarPopup15()">Centro Histórico do Município de Diamantina</h2> </li>
+
+                <div  class="popup" class="popup15" id="popup15"> 
+                    <div class="conteudoPopup15">
+                    <h3 class="mapa"> 28,5 ha | Minas Gerais  </h3>
+                    <p>Diamantina, uma vila colonial cravada como uma joia em um colar de inóspitas montanhas rochosas, relembra as façanhas dos garimpeiros de diamantes no século XVIII e testemunha o triunfo do esforço cultural e artístico humano sobre o meio ambiente.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+           
+
+            <li class="cul" >
+                <h2 onclick="alterarPopup16()">Cidade Histórica de Ouro Preto</h2> 
+            </li>
+                <div class="popup" class="popup16" id="popup16"> 
+                    <div class="conteudoPopup16">
+                    <h3 class="mapa"> 167,8 ha | Minas Gerais  </h3>
+                    <p>Fundada no final do século XVII, Ouro Preto foi o foco da corrida do ouro e da era de ouro do Brasil no século XVIII. Com o esgotamento das minas de ouro no século XIX, a influência da cidade diminuiu, mas muitas igrejas, pontes e fontes permanecem como testemunho de sua prosperidade passada e do talento excepcional do escultor barroco Aleijadinho.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+            
+
+            <li class="cul" >
+                <h2 onclick="alterarPopup17()">Sítio Arqueológico Cais do Valongo</h2> 
+            </li>
+                <div class="popup" class="popup17" id="popup17"> 
+                    <div class="conteudoPopup17">
+                    <h3 class="mapa"> 0,3895 ha | Rio de Janeiro  </h3>
+                    <p>O Sítio Arqueológico Cais do Valongo está localizado no centro do Rio de Janeiro e abrange toda a Praça do Jornal do Comércio. É na antiga zona portuária do Rio de Janeiro que foi construído o antigo cais de pedra para o desembarque de africanos escravizados que chegavam ao continente sul-americano a partir de 1811. Estima-se que 900.000 africanos chegaram à América do Sul via Valongo. O sítio é composto por várias camadas arqueológicas, sendo a mais baixa constituída por pavimentos em  estilo pé de moleque  , atribuídos ao original Cais do Valongo. É o traço físico mais importante da chegada de escravos africanos ao continente americano.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+            
+
+            <li class="cul">
+                <h2 onclick="alterarPopup18()">Rio de Janeiro: Paisagens Cariocas entre a Serra e o Mar</h2>
+             </li>
+                <div class="popup" class="popup18" id="popup18"> 
+                    <div class="conteudoPopup18">                   
+                    <h3> 7.248,78 ha | Rio de Janeiro  </h3>
+                    <p>O local consiste em um cenário urbano excepcional que engloba os principais elementos naturais que moldaram e inspiraram o desenvolvimento da cidade: desde os pontos mais altos da serra do Parque Nacional da Tijuca até o mar. Eles também incluem o Jardim Botânico, fundado em 1808, o Morro do Corcovado com sua célebre estátua do Cristo e as colinas ao redor da Baía de Guanabara, incluindo as extensas paisagens projetadas ao longo da Baía de Copacabana que contribuíram para a cultura viva ao ar livre desta cidade espetacular. O Rio de Janeiro também é reconhecido pela inspiração artística que proporcionou a músicos, paisagistas e urbanistas.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div> 
+            
+            
+            <li class="cul">
+                <h2 onclick="alterarPopup19()">Sítio Roberto Burle Marx</h2> 
+             </li>
+                <div class="popup" class="popup19" id="popup19"> 
+                    <div class="conteudoPopup19">
+                    <h3 class="mapa"> 40,53 ha | Rio de Janeiro  </h3>
+                    <p>Situada na zona oeste do Rio de Janeiro, a propriedade materializa um projeto de sucesso desenvolvido ao longo de mais de 40 anos pelo paisagista e artista plástico Roberto Burle Marx (1909-1994), um “laboratório paisagístico” para criar “obras de arte vivas” utilizando plantas nativas e inspirando-se nas ideias modernistas. Iniciada em 1949, a propriedade engloba extensas paisagens, jardins, prédios e acervos, que apresentam as principais características que definiram os jardins paisagísticos de Burle Marx e influenciaram o desenvolvimento dos jardins modernos internacionalmente. O local é caracterizado por formas sinuosas, exuberante plantação em massa, arranjos de plantas arquitetônicas, contrastes dramáticos de cores, uso de plantas tropicais e incorporação de elementos da cultura popular tradicional. No final da década de 1960, o local abrigava a coleção mais representativa de plantas brasileiras, ao lado de outras espécies tropicais raras. No local, 3.500 espécies cultivadas da flora tropical e subtropical crescem em harmonia com a vegetação nativa da região, com destaque para o bioma Mata Atlântica e ecossistemas associados, manguezal e restinga. O Sítio Roberto Burle Marx apresenta uma concepção ecológica da forma como processo, incluindo a colaboração social que é a base da preservação ambiental e cultural. É o primeiro jardim tropical moderno a ser inscrito na Lista do Patrimônio Mundial. notadamente o bioma Mata Atlântica e ecossistemas associados, manguezal e restinga (planície arenosa tropical costeira). O Sítio Roberto Burle Marx apresenta uma concepção ecológica da forma como processo, incluindo a colaboração social que é a base da preservação ambiental e cultural. É o primeiro jardim tropical moderno a ser inscrito na Lista do Patrimônio Mundial. notadamente o bioma Mata Atlântica e ecossistemas associados, manguezal e restinga (planície arenosa tropical costeira). O Sítio Roberto Burle Marx apresenta uma concepção ecológica da forma como processo, incluindo a colaboração social que é a base da preservação ambiental e cultural. É o primeiro jardim tropical moderno a ser inscrito na Lista do Patrimônio Mundial.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+            
+
+            <li class="misto">
+                <h2 onclick="alterarPopup20()">Paraty e Ilha Grande </h2> 
+             </li>
+                <div class="popup"  class="popup20" id="popup20"> 
+                    <div class="conteudoPopup20">
+                    <h3 class="mapa"> 173.164,18 ha | Rio de Janeiro e São Paulo  </h3>
+                    <p>Essa paisagem natural-cultural abrange o centro histórico de Paraty, uma das cidades litorâneas mais bem preservadas do Brasil, quatro áreas naturais protegidas da Mata Atlântica brasileira, um dos cinco principais hotspots de biodiversidade do mundo, além de parte da Serra da Bocaina e da região costeira atlântica. A Serra do Mar e a Baía da Ilha Grande abrigam uma impressionante diversidade de espécies animais, algumas delas ameaçadas, como a onça-pintada ( Panthera onca ), o queixada ( Tayassu pecari ) e diversas espécies de primatas, incluindo o Muriqui-do-Sul. ( Brachyteles arachnoides ), que são emblemáticos da propriedade. No final do século XVII, Paraty era o ponto final do Caminho do Ouro(Rota do Ouro), ao longo da qual o ouro era enviado para a Europa. Seu porto também servia de porta de entrada para ferramentas e escravos africanos, enviados para trabalhar nas minas. Um sistema de defesa foi construído para proteger a riqueza do porto e da cidade. O centro histórico de Paraty manteve sua planta do século XVIII e grande parte de sua arquitetura colonial que data do século XVIII e início do século XIX.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+            
+
+            <li class="nat">
+                <h2 onclick="alterarPopup21()">Reservas do Sudeste da Mata Atlântica</h2>  </li>
+                <div class="popup" class="popup21" id="popup21" > 
+                    <div class="conteudoPopup21">
+                    
+                    <h3 class="mapa">  468.193 ha | Paraná e São Paulo</h3>
+                    <p>As Reservas da Mata Atlântica do Sudeste, nos estados do Paraná e São Paulo, contêm alguns dos melhores e mais extensos exemplares de Mata Atlântica do Brasil. As 25 áreas protegidas que compõem o sítio (cerca de 470.000 ha no total) apresentam a riqueza biológica e a história evolutiva dos últimos remanescentes de Mata Atlântica. Desde montanhas cobertas por densas florestas, passando por zonas húmidas, ilhas costeiras com montanhas e dunas isoladas, a área compreende um rico ambiente natural de grande beleza cênica.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div></div>
+           
+
+            <li class="nat" >
+                <h2 onclick="alterarPopup22()">Parque Nacional do Iguaçu</h2> 
+             </li>
+                <div class="popup" class="popup22" id="popup22"> 
+                    <div class="conteudoPopup22">
+                    <h3 class="mapa">  169.695,88 ha | Paraná </h3>
+                    <p>O parque compartilha com o Parque Nacional do Iguaçu, na Argentina, uma das maiores e mais impressionantes cachoeiras do mundo, com cerca de 2.700 m. É o lar de muitas espécies raras e ameaçadas de flora e fauna, entre elas a ariranha e o tamanduá-bandeira. As nuvens de spray produzidas pela cachoeira são propícias ao crescimento de uma vegetação exuberante.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+            
+            
+            <li class="cul">
+                <h2  onclick="alterarPopup23()">Missões Jesuítas dos Guaranis: San Ignacio Mini, Santa Ana, Nuestra Señora de Loreto e Santa Maria Mayor (Argentina), Ruínas de São Miguel das Missões (Brasil)</h2> </li>
+                <div class="popup"  class="popup23" id="popup23"> 
+                    <div class="conteudoPopup23">
+                    <h3 class="mapa">  265,09 ha | Rio Grande do Sul </h3>
+                    <p>As ruínas de São Miguel das Missões, no Brasil, e as de San Ignacio Miní, Santa Ana, Nuestra Señora de Loreto e Santa María la Mayor, na Argentina, estão no coração de uma floresta tropical. São os impressionantes vestígios de cinco missões jesuíticas, construídas na terra dos Guaranis durante os séculos XVII e XVIII. Cada um é caracterizado por um layout específico e um estado de conservação diferente.
+                    </p>
+                   <p> Fonte:UNESCO </p>
+                   </div> </div>
+            
+            
+         </ol>         
+    </div>
+      
+      <div class="textoMateria">
+        <h3 > 
+            O Estado de Minas Gerais concentra o maior número de patrimônios da humanidade dentro do território brasileiro, com <B class="destaqueCul"> 4 Patrimônios culturais</B> reconhecidos pela UNESCO.
+        </h3> 
+        <figure class="mg" >
+            <img id="mg" src="img/graficos/mg.svg" alt="Mapa de Minas Gerais com 4 quadrados vermelhos que representam 4 Patrimônios Culturais." title="Mapa de Minas Gerais com 4 quadrados vermelhos, representando os 4 Patrimônios Culturais.">
+            <figcaption>Ilustração: Patrimônios Culturais do Mundo, em Minas Gerais. Foto:Gabriela Soares </figcaption>
+        </figure>
+       
+           <p> 
+         <b> Em número de sítios, 65% dos territórios reconhecidos pela UNESCO como Patrimônio da Humanidade no Brasil são classificados como de inestimável valor cultural.                    
+         </b>
+           </p>
+
+          <p>Infelizmente, as chuvas que atingiram Minas Gerais em janeiro deste ano causaram danos significativos a alguns desses locais, principalmente Ouro Preto — primeira cidade brasileira inscrita na Lista do Patrimônio Mundial da UNESCO —, e Congonhas.
+          </p>
+
+         <p class="txtEspecial"> 
+               <i> <b>
+                 “Os cada vez mais frequentes desastres por causas naturais devem nos alertar em relação às mudanças climáticas que já estão acontecendo e nos mobilizar a favor de políticas coordenadas de proteção, mitigação de desastres e planos de gestão adequados",                        
+              </b></i>
+
+               afirmou em nota a Diretora e Representante da UNESCO no Brasil, Marlova Noleto.
+          </p>
+       </div>
+
+       <div class="imagensCul">
+        <figure class="casaro">  
+            <p class="destaqueImg">
+               <b> Solar Baeta Neves: primeira construção de estilo neocolonial de Ouro Preto </b> <br>O casarão do século XIX foi completamente destruída por um deslizamento de terra  do Morro da Forca no centro histórico de Ouro Preto, em 13 de janeiro de 2022. 
+             </p>     
+                           
+            <img class="imgCasarao"src="img/casarao.svg" alt="Solar Baeta Neves" title="Fachada e imagens internas do casarão antes do soterramento.">
+            <figcaption> Imagem: Solar Baeta Neves. Foto:Google Street View/ Revista Forum. 
+             Vídeo: Momente em que Solar Baeta Neves é atingida pelo deslizamento de terra. Vídeo retirado da página Metrópoles.</figcaption> 
+            
+        </figure>
+        
+        <!--<img class="gif" src="img/Momento em que casarão de Ouro Preto desaba após deslizamento de terra.gif">    -->
+       
+        
+        
+      </div>
+       
+      <div class="textoMateria">
+                 
+                                     
+        <h2>
+          Patrimônios Naturais no Brasil                    
+      </h2>
+    <p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem, harum distinctio dolores impedit qui totam quia inventore! Eos temporibus modi corrupti explicabo obcaecati officia numquam magni quisquam impedit nostrum.
+   </p>
+
+   <p> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laudantium similique, dicta, ipsam in ut temporibus expedita, iusto harum iure consequatur! Ipsam nulla recusandae nihil, reiciendis mollitia ducimus libero officiis!
+   </p>
+
+ 
+
+
+   <p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, labore assumenda. Voluptatibus nihil ratione sequi unde quo nobis fugit impedit, libero quia quaerat molestiae accusantium? Esse assumenda animi eum deserunt!
+   </p>
+
+   
+
+    <p> 
+   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non consectetur in autem labore quibusdam dolorum distinctio ipsum magni reprehenderit sunt eius consequuntur eaque, repudiandae aliquid ex excepturi sapiente ea! Cupiditate.
+    </p>
+
+   <p>
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere expedita vitae? Nostrum quia aspernatur ullam sint molestiae rem fuga laudantium voluptatibus, fugit suscipit. Amet, sint. Repellendus molestiae nam quaerat.
+   </p>
+       </div>
+
+       <footer>
+        <h4> Por                        
+            <a href="https://www.linkedin.com/in/   gabriela-soares-ramalho-b36344147/" target="_blank"> 
+                Gabriela Soares</a>, sob orientação de Carol Rozendo, Rodrigo Menegat e Vinicius Sueiro.
+        </h4>
+
+       
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

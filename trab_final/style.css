@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=League+Spartan:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,600;0,700;1,100;1,500&family=Inter:wght@400;600&family=Merriweather&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flexbox;
+}
+
+.head {
+    display: flexbox;
+    width: 100%;
+    height: 45rem;
+    background: url(img/background_1.svg);
+    padding: 0;
+    margin-top: 0%;
+    text-align: center;
+    /* pq, quando a tela está menor a imagem pede rolagem  e corta a img*/
+
+}
+
+.head>h1 {
+    margin: 0;
+    font-family: Bebas Neue;
+    letter-spacing: 1.5px;
+    padding-top: 480px;
+    size: 200px;
+    color: #ffff;
+}
+
+.head>h2 {
+    margin: 0;
+    padding-top: 0%;
+    font-weight: lighter;
+    color: #ffff;
+}
+
+#linkHead {
+    color: #ffff;
+}
+
+
+.head>p {
+    margin: 0;
+    font-stretch: 40%;
+    padding-top: 5px;
+    color: #ffff;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 50px;
+
+}
+
+
+h2 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 25px;
+
+}
+
+h3 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Bebas Neue;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+p {
+    font-family: Lato e Merriweather;
+    size: 13px;
+
+}
+
+.textoMateria {
+
+    padding-left: 20%;
+    padding-top: 1rem;
+    padding-right: 20%;
+    padding-bottom: 2rem;
+
+}
+
+h3>.destaqueCul {
+    background-color: #D92525;
+    color: #ffff;
+    padding-bottom: 0;
+}
+
+h3>.destaqueNat {
+    background-color: #2CA25F;
+    color: #ffff;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+p>.destaqueNat {
+    background-color: #2CA25F;
+    color: #ffff;
+    font-weight: lighter;
+}
+
+p>.destaqueCul {
+    background-color: #2CA25F;
+    color: #ffff;
+    font-weight: lighter;
+}
+
+.destaqueImg>b {
+    font-family: Bebas Neue;
+    letter-spacing: 2px;
+
+}
+
+.destaqueImg {
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 500px;
+    background-color: #D92525;
+    color: #ffff;
+    padding: 1rem;
+
+    margin-right: 1rem;
+}
+
+.imagensCul {
+    padding: 1rem;
+    padding-left: 10%;
+    padding-right: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+}
+
+.gif {
+    margin-top: 3rem;
+}
+
+
+
+
+.figure {
+    padding-top: 1 rem;
+    padding-bottom: 1rem;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+
+.infoImg {
+    display: inline-block;
+
+
+}
+
+.infoIm>img {
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    display: flex;
+    font-size: x-small;
+    border-bottom: thin solid black;
+    padding-left: 0.5rem;
+    text-align: start;
+    margin: 0;
+    max-width: 300px;
+    padding-top: 0.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .textoMateria>.mg {
+       
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #mg {
+        max-width: 250px;
+        align-content: flex-start;
+        margin-left: 0%;
+       
+    }   
+   
+    
+    .head{ 
+        margin-top: 0%;
+    }
+    
+    .imgCasarao { 
+        max-width: 250px;
+         margin-left: 0%;
+    }
+    .infoImg { max-width: 250px;
+    margin-left: 0;
+padding-left: 0; }
+
+}
+
+
+.containerMapa {
+    display: flex;
+    flex-direction: row;
+        background-color: #e9e9e9;
+        margin: 0;
+    width: 100%;
+    padding: 0%;
+}
+
+li>h2 {
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 0;
+    max-width: 500px;
+}
+
+h3.mapa {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.containerMapa>img {
+    padding-bottom: 0%;
+    width: 50%;
+    justify-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+ol {
+
+    width: 50%;
+    padding: 1rem;
+    ;
+}
+
+ol>h3 {
+    text-align: center;
+    padding: 0 5%;
+}
+
+ol>h2 {
+    color: #D92525;
+}
+
+li>h3 {
+    font-weight: lighter;
+
+
+}
+
+li {
+    cursor: pointer;
+    text-align: center;
+}
+
+li.nat :hover {
+    background-color: #2CA25F;
+    width: auto;
+    text-align: left;
+    color: white;
+
+}
+
+li.cul :hover {
+    background-color: #D92525;
+    width: auto;
+    text-align: left;
+    color: white;
+
+}
+
+.popup1.ativa1 .conteudoPopup1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup1 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup2.ativa2 .conteudoPopup2 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup2 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup3.ativa3 .conteudoPopup3 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup3 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup4.ativa4 .conteudoPopup4 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup4 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup5.ativa5 .conteudoPopup5 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup5 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup6.ativa6 .conteudoPopup6 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup6 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup7.ativa7 .conteudoPopup7 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup7 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup8.ativa8 .conteudoPopup8 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup8 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup9.ativa9 .conteudoPopup9 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup9 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup10.ativa10 .conteudoPopup10 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup10 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup11.ativa11 .conteudoPopup11 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup11 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup12.ativa12 .conteudoPopup12 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup12 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup13.ativa13 .conteudoPopup13 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup13 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup14.ativa14 .conteudoPopup14 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup14 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup15.ativa15 .conteudoPopup15 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup15 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup16.ativa16 .conteudoPopup16 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup16 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup17.ativa17 .conteudoPopup17 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup17 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup18.ativa18 .conteudoPopup18 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup18 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup19.ativa19 .conteudoPopup19 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup19 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup20.ativa20 .conteudoPopup20 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup20 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup21.ativa21 .conteudoPopup21 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup21 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup22.ativa22 .conteudoPopup22 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup22 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+.popup23.ativa23 .conteudoPopup23 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+}
+
+.conteudoPopup23 {
+    display: none;
+    border: solid black;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    max-width: 600px;
+}
+
+/*  FIMMMMMM CSS MAPA  - CSS MAPA  - CSS MAPA    */

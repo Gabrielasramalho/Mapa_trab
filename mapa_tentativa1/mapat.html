@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .mapaInterativo{ 
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   
+    margin-left: 0;
+    height: 700px;
+    background-color: #f2f2f27a;
+     padding-top:1rem;
+    padding-bottom: 1rem;
+padding-left: 5%;}
+
+#mapaGeral {
+    cursor: pointer;
+  
+}
+#patriNat :hover {
+    fill: #0e592f;
+}
+
+#patriCul :hover {
+    fill: #941a1a;
+}
+
+#misto> :hover {
+    fill: #941a1a;
+}
+
+.conteudoPopup {
+    margin-top: 0;
+    margin-right: 0%;
+    margin-left: 50%;
+    background-color: #ffff;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: none;
+    border: solid black;
+    align-items: center;
+    max-width: 500px;
+}
+
+.popup .botaoFechar {
+    
+    cursor: pointer;
+    right: 10px;
+    top: 10%;
+    width: 18px;
+    height: 18px;
+    background: black;
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin: 1rem;
+}
+
+
+.popup.ativa .conteudoPopup {
+    display: block;
+    transition: all 300ms ease-in-out;
+    transform: translater(-50%, -50%) scale(1);
+    width: 90%;
+    padding-top: 2rem;
+    padding-right: 5%;
+}
+
+
+.conteudoPopup>button {
+    cursor: pointer;
+    display: flexbox;
+    margin-bottom: 1rem;
+    margin-left: 70%;
+    background-color: #BAE4BC;
+    padding: 0.3rem;
+    border-color: #BAE4BC;
+    align-content: center;
+}
+    </style>
+</head>
+<body>
+
+    <div class="mapaInterativo">    
+                      
+        <div id="mapaConteudo"></div>
+
+         
+         <div class="popup" id="popup-1">                        
+           <div class="conteudoPopup"> 
+              <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
+               <h2 id="nomePatrimonio"> </h2>
+               <h3 class="h3descMapa" id="estadoPatrimonio"> </h3>
+               <h3 class="h3descMapa" id="tamanhoPatrimonio">
+            
+                </h3>
+                <p id="descricaoPatrimonio"> </p>
+
+                 <button> <a href="#galeria"> Ver na galeria de fotos </a> </button>
+   </div>
+   </div>
+   </div>
+   <script src="mapat.js"> </script>
+</body>
+</html>
